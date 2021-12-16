@@ -1,0 +1,33 @@
+{
+    "rule_catch_all": true,
+    "rule_1": {
+        "request": {
+            "url": ["re:.*.google.com"],
+            "headers": {
+                ":method": ["PUT", "POST"],
+                "user-agent": ["re:^Mozilla.*Apple.*"]
+            }
+        },
+        "response": {
+          "status": ["200", "302", "204"],
+          "headers": {
+            "content-type": ["re:text.*"]
+          }
+        }
+    },
+    "rule_2": {
+        "request": {
+            "url": ["re:.*.google.com"],
+            "headers": {
+                ":method": ["GET", "POST"],
+                "user-agent": ["re:^Mozilla.*Apple.*"]
+            }
+        },
+        "response": {
+          "status": ["200", "302", "204"],
+          "headers": {
+            "content-type": ["re:text.*"]
+          }
+        }
+    }
+}

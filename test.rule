@@ -1,0 +1,33 @@
+{
+    "rule_catch_all": true,
+    "rule_1": {
+        "request": {
+            "url": ["re:.*.free.beeceptor.com/matchme$"],
+            "headers": {
+                ":method": ["GET"],
+                "user-agent": ["re:^Mozilla.*Apple.*"]
+            }
+        },
+        "response": {
+          "status": ["200"],
+          "headers": {
+            "content-type": ["re:text.*"]
+          }
+        }
+    },
+    "rule_2": {
+        "request": {
+            "url": ["re:.*.free.beeceptor.com"],
+            "headers": {
+                ":method": ["POST"],
+                "user-agent": ["re:^Mozilla.*Apple.*"]
+            }
+        },
+        "response": {
+          "status": ["200"],
+          "headers": {
+            "content-type": ["re:text.*"]
+          }
+        }
+    }
+}
