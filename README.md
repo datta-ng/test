@@ -8,8 +8,8 @@ HTTP Rule Matcher
     [2] Traffic Change Analyzer
     [3] Rule Regression Analyzer
     Select the tool [1|2|3]:1
-    Enter HAR file location:www.google.com.har
-    Enter Rule file location:sample.rule
+    Enter HAR file location:hars/www.google.com.har
+    Enter Rule file location:rules/sample.rule
     Running rule matcher...
     Writing the URL's to rules matched in file : www.google.com.har_sample.rule.out
     host123abc:http_analyzer datta$
@@ -22,9 +22,9 @@ Traffic Change Analyzer - No Change
     [2] Traffic Change Analyzer
     [3] Rule Regression Analyzer
     Select the tool [1|2|3]:2
-    Enter old HAR file location:www.google.com.har
-    Enter new HAR file location:www.google.com_copy.har
-    Enter Rule file location:sample.rule
+    Enter old HAR file location:hars/www.google.com.har
+    Enter new HAR file location:hars/www.google.com_copy.har
+    Enter Rule file location:rules/sample.rule
     Running traffic change analyzer...
     Writing the URL's to rules matched in file : www.google.com.har_sample.rule.out
     Writing the URL's to rules matched in file : www.google.com_copy.har_sample.rule.out
@@ -39,9 +39,9 @@ Traffic Change Analyzer - Change
     [2] Traffic Change Analyzer
     [3] Rule Regression Analyzer
     Select the tool [1|2|3]:2
-    Enter old HAR file location:www.google.com.har
-    Enter new HAR file location:www.bing.com.har
-    Enter Rule file location:sample.rule
+    Enter old HAR file location:hars/www.google.com.har
+    Enter new HAR file location:hars/www.bing.com.har
+    Enter Rule file location:rules/sample.rule
     Running traffic change analyzer...
     Writing the URL's to rules matched in file : www.google.com.har_sample.rule.out
     Writing the URL's to rules matched in file : www.bing.com.har_sample.rule.out
@@ -56,9 +56,9 @@ Rule Regression Analyzer
     [2] Traffic Change Analyzer
     [3] Rule Regression Analyzer
     Select the tool [1|2|3]:3
-    Enter HAR file location:www.google.com.har
-    Enter Old Rule file location:sample.rule
-    Enter New Rule file location:sample2.rule
+    Enter HAR file location:hars/www.google.com.har
+    Enter Old Rule file location:rules/sample.rule
+    Enter New Rule file location:rules/sample2.rule
     Running regression check...
     Writing the URL's to rules matched in file : www.google.com.har_sample.rule.out
     Writing the URL's to rules matched in file : www.google.com.har_sample2.rule.out
