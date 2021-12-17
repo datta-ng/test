@@ -9,8 +9,8 @@ from http_parser import process_entry
 
 class TestHttpParser(unittest.TestCase):
     def setUp(self):
-        har_file = open("test.har", 'r')
-    	rule_file = open("test.rule", 'r')
+        har_file = open("hars/test.har", 'r')
+    	rule_file = open("rules/test.rule", 'r')
 
     	har_data = json.load(har_file)
     	self.entries_list = har_data['log']['entries']
